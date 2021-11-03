@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Tareas</title>
+
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/switch.css">
+
+        <!-- Externos -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+        <!-- Scripts -->
+        <script src="funcionamiento.js" type="text/javascript" defer></script>
+        
+    <head>
+    <body>
+        <!-- Selector de Tema -->
+        <button class="switch" id="switch">
+            <span class="span"><i class="fas fa-sun"></i></span>
+            <span class="span"><i class="fas fa-moon"></i></span>
+        </button>
+        <!-- Pagina -->
+        <div class="list roundBorder">
+            <div class="date">
+                <div class="dateRight">
+                    <div id="dateNumber"></div>
+                    <div>
+                        <div id="dateMonth"></div>
+                        <div id="dateYear"></div>
+                    </div>
+                </div>
+                <div id="dateText"></div>
+            </div>
+            <form onsubmit="addNewTask(event)" >
+                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+                <button type="submit" class="addTaskButton">+</button>
+                <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+            </form>
+            <div id="tasksContainer"></div>
+                    <!-- Scripts -->
+        <script src="switch.js" type="text/javascript" defer></script>
+        </div>
+
+        <!-- Scripts -->
+        <script src="switch.js" type="text/javascript" defer></script>
+    </body>
+</html>
